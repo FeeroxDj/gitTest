@@ -31,7 +31,21 @@
     transform: scale(1.2);
 }
 
+.container nav ul li{
+    position: relative;
+    float: left;
+}
+.container nav ul li a{
+    padding: 20px;
+    color: #000;
+    font-size: 17px;
+    display: block;
+}
 
+img{
+    display: block;
+    margin: 130px auto;
+}
 body{
     height: 100vh;
     background: url(https://wp-s.ru/wallpapers/12/15/466982402929615/derevo-s-osennej-listvoj-abstrakciya.jpg) no-repeat;
