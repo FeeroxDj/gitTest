@@ -46,10 +46,67 @@ img{
     display: block;
     margin: 130px auto;
 }
-body{
+body {
+    
+    padding-top: 40px;    
     height: 100vh;
-    background: url(https://wp-s.ru/wallpapers/12/15/466982402929615/derevo-s-osennej-listvoj-abstrakciya.jpg) no-repeat;
-    background-position: center;
+    /* Добавлены кавычки и надежная ссылка для теста */
+    background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1920&q=80') no-repeat center center;
     background-size: cover;
-  
 }
+
+.content-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    max-width: 1110px;
+    margin: 0 auto;
+    padding: 50px 15px;
+}
+.image-block {
+    flex: 0 0 50%;
+}
+.girl{
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+.text-block {
+    flex: 0 0 45%;
+}
+.text-block p {
+    font-size: 0.875rem;
+    line-height: 1.6;
+    color: #101010;
+}
+.button-wrapper {
+    text-align: center;
+    padding: 40px 0;
+}
+.button-wrapper button {
+    padding: 10px 30px;
+    background: #ED4C5C;
+    color:#fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.button-wrapper button:hover {
+    background: #d63d4c;
+}
+@media (max-width: 800px) {
+    .content-wrapper {
+        flex-direction: column;
+    }
+    .image-block,
+    .text-block {
+        flex: 0 0 100%;
+    }
+    .image-block {
+        order: 2;
+    }
+}
+
